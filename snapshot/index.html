@@ -1,0 +1,289 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Translate Neuro  -  Digital Presence Snapshot | Cary</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: #0d1117; color: #1B75BB; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+    .snap-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+    .snap-three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
+    /* Print / Save PDF button */
+    .print-btn {
+      position: fixed; bottom: 24px; right: 24px; z-index: 2000;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 18px; border-radius: 10px;
+      background: rgba(13,17,23,0.92); border: 1px solid rgba(255,255,255,0.10);
+      color: #1B75BB; font-size: 13px; font-weight: 600; cursor: pointer;
+      backdrop-filter: blur(12px); box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      transition: background 0.2s, transform 0.15s; font-family: inherit;
+    }
+    .print-btn:hover { background: rgba(6,182,212,0.18); transform: translateY(-1px); }
+    @media (max-width: 900px) {
+      .snap-two-col { grid-template-columns: 1fr; }
+      .snap-three-col { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .container { padding: 0 16px; }
+      .cat-grid { grid-template-columns: repeat(2, 1fr) !important; }
+      .snap-three-col { grid-template-columns: 1fr; }
+      .print-btn { bottom: 16px; right: 12px; padding: 8px 14px; font-size: 12px; }
+    }
+    @media print {
+      @page { margin: 10mm 12mm; size: A4; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
+      html, body { background: #ffffff !important; color: #111827 !important; }
+      /* Force all dark backgrounds to white for print */
+      [style*="background"], [style*="background-color"] { background: transparent !important; background-color: transparent !important; }
+      /* Ensure light-colored text becomes dark for print */
+      [style*="color:#f"], [style*="color: #f"], [style*="color:#e"], [style*="color: #e"], [style*="color:#d"], [style*="color: #d"], [style*="color:#c"], [style*="color: #c"], [style*="color:#b"], [style*="color: #b"], [style*="color:#a"], [style*="color: #a"] { color: #111827 !important; }
+      h1, h2, h3, h4, h5, h6 { color: #111827 !important; }
+      header { position: static !important; background: #ffffff !important; border-bottom-color: #e5e7eb !important; }
+      .print-btn { display: none !important; }
+      .container { max-width: 100% !important; padding: 0 6mm !important; }
+      a { color: #1d4ed8 !important; text-decoration: none !important; }
+      h1, h2, h3 { page-break-after: avoid; }
+      div[style*="margin-top:48px"] { page-break-inside: avoid; }
+      /* Card/section backgrounds */
+      .card, .metric-card, .score-card { background: #f9fafb !important; border-color: #e5e7eb !important; }
+    }
+  </style>
+  
+  
+</head>
+<body>
+  <!-- Header -->
+  <header style="background:#0d1117;border-bottom:1px solid #30363d;padding:16px 0;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px);">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+      <img src="../assets/logo.png" alt="Cary" style="max-height:48px;max-width:160px;object-fit:contain;" />
+      <a href="https://link.actionpotential.ai/widget/booking/ksD7NPYqg5JoFugUIJnm" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;background:#2ea6d4;color:#000;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap;">Book Your Free Strategy Session →</a>
+    </div>
+  </header>
+
+  <!-- Score Hero -->
+  <section style="padding:56px 0 40px;background:linear-gradient(180deg,#0d1117 0%,#161b22 100%);">
+    <div class="container">
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:5px 14px;border-radius:20px;background:#1c2128;border:1px solid rgba(255,255,255,0.10);margin-bottom:20px;">
+        <div style="width:6px;height:6px;border-radius:50%;background:#2ea6d4;"></div>
+        <span style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6e7681;">Digital Presence Snapshot</span>
+      </div>
+      <h1 style="font-size:clamp(28px,5vw,42px);font-weight:800;line-height:1.15;letter-spacing:-0.02em;margin-bottom:8px;">Translate Neuro</h1>
+      <p style="font-size:14px;color:#6e7681;margin-bottom:32px;">https://translateneuro.com</p>
+      <!-- Score ring + label -->
+      <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+        <div style="width:160px;height:160px;border-radius:50%;border:10px solid #f97316;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,0.03);box-shadow:0 0 50px #f9731625;flex-shrink:0;">
+          <div style="font-size:52px;font-weight:900;color:#f97316;line-height:1;">31</div>
+          <div style="font-size:11px;color:#6e7681;margin-top:2px;">out of 100</div>
+        </div>
+        <div style="flex:1;min-width:200px;">
+          <div style="display:inline-block;padding:6px 18px;border-radius:20px;background:#f9731618;color:#f97316;font-size:16px;font-weight:800;margin-bottom:12px;">Needs Work</div>
+          <p style="font-size:15px;color:#2EA6D4;line-height:1.6;">This score reflects Translate Neuro's overall digital presence across 10 key categories  -  from local SEO and page speed to backlink authority and content strategy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main style="padding:0 0 64px;">
+    <div class="container">
+
+      <!-- Category Score Cards -->
+      
+      <div style="margin:40px 0 0;">
+        <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6e7681;margin-bottom:16px;">Weakest Areas</div>
+        <div class="cat-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+          
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:20px 18px;text-align:center;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#ef4444;"></div>
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#6e7681;margin-bottom:10px;">Content Strategy</div>
+      <div style="font-size:46px;font-weight:900;color:#ef4444;line-height:1;margin-bottom:4px;">0</div>
+      <div style="font-size:11px;color:#6e7681;">out of 100</div>
+      <div style="margin-top:10px;display:inline-block;padding:3px 10px;border-radius:20px;background:#ef444418;color:#ef4444;font-size:11px;font-weight:700;">Critical</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:20px 18px;text-align:center;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#ef4444;"></div>
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#6e7681;margin-bottom:10px;">Organic Visibility</div>
+      <div style="font-size:46px;font-weight:900;color:#ef4444;line-height:1;margin-bottom:4px;">3</div>
+      <div style="font-size:11px;color:#6e7681;">out of 100</div>
+      <div style="margin-top:10px;display:inline-block;padding:3px 10px;border-radius:20px;background:#ef444418;color:#ef4444;font-size:11px;font-weight:700;">Critical</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:20px 18px;text-align:center;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#ef4444;"></div>
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#6e7681;margin-bottom:10px;">Social Presence</div>
+      <div style="font-size:46px;font-weight:900;color:#ef4444;line-height:1;margin-bottom:4px;">5</div>
+      <div style="font-size:11px;color:#6e7681;">out of 100</div>
+      <div style="margin-top:10px;display:inline-block;padding:3px 10px;border-radius:20px;background:#ef444418;color:#ef4444;font-size:11px;font-weight:700;">Critical</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:20px 18px;text-align:center;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#ef4444;"></div>
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#6e7681;margin-bottom:10px;">Reviews / Reputation</div>
+      <div style="font-size:46px;font-weight:900;color:#ef4444;line-height:1;margin-bottom:4px;">10</div>
+      <div style="font-size:11px;color:#6e7681;">out of 100</div>
+      <div style="margin-top:10px;display:inline-block;padding:3px 10px;border-radius:20px;background:#ef444418;color:#ef4444;font-size:11px;font-weight:700;">Critical</div>
+    </div>
+        </div>
+      </div>
+
+      
+      
+    <div style="margin:32px 0;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+        <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6e7681;">Domain Intelligence</div>
+        <span style="font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#818cf8;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.25);border-radius:4px;padding:2px 7px;">DataForSEO</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;">
+        <div style="background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.2);border-radius:14px;padding:20px 16px;text-align:center;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:3px;background:#6366f1;"></div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#818cf8;margin-bottom:8px;">Total Backlinks</div><div style="font-size:32px;font-weight:900;color:#1B75BB;line-height:1;margin-bottom:4px;">~2k</div><div style="font-size:10px;color:#6e7681;">inbound links</div></div><div style="background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.2);border-radius:14px;padding:20px 16px;text-align:center;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:3px;background:#6366f1;"></div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#818cf8;margin-bottom:8px;">Referring Domains</div><div style="font-size:32px;font-weight:900;color:#22c55e;line-height:1;margin-bottom:4px;">1,970</div><div style="font-size:10px;color:#6e7681;">unique domains</div></div><div style="background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.2);border-radius:14px;padding:20px 16px;text-align:center;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:3px;background:#6366f1;"></div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#818cf8;margin-bottom:8px;">Organic Traffic</div><div style="font-size:32px;font-weight:900;color:#ef4444;line-height:1;margin-bottom:4px;">0</div><div style="font-size:10px;color:#6e7681;">est. monthly visitors</div></div><div style="background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.2);border-radius:14px;padding:20px 16px;text-align:center;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:3px;background:#818cf8;"></div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#818cf8;margin-bottom:8px;">Top 10 Rankings</div><div style="font-size:32px;font-weight:900;color:#ef4444;line-height:1;margin-bottom:4px;">0</div><div style="font-size:10px;color:#6e7681;">keywords on page 1</div></div><div style="background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.2);border-radius:14px;padding:20px 16px;text-align:center;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:3px;background:#818cf8;"></div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#818cf8;margin-bottom:8px;">Page 2 Rankings</div><div style="font-size:32px;font-weight:900;color:#1B75BB;line-height:1;margin-bottom:4px;">0</div><div style="font-size:10px;color:#6e7681;">positions #11-20</div></div><div style="background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.2);border-radius:14px;padding:20px 16px;text-align:center;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:3px;background:#818cf8;"></div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#818cf8;margin-bottom:8px;">Ranking Momentum</div><div style="font-size:32px;font-weight:900;color:#ef4444;line-height:1;margin-bottom:4px;">-1</div><div style="font-size:10px;color:#6e7681;">net keyword change</div></div>
+      </div>
+    </div>
+      
+    <div style="margin:32px 0;padding:24px;border-radius:16px;background:rgba(99,102,241,0.04);border:1px solid rgba(99,102,241,0.15);">
+      <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#818cf8;margin-bottom:16px;">Keyword Position Distribution <span style="font-size:10px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.25);border-radius:4px;padding:2px 7px;margin-left:6px;">DataForSEO</span></div>
+      <div style="display:flex;gap:24px;align-items:center;flex-wrap:wrap;">
+        <svg viewBox="0 0 160 160" width="160" height="160" style="flex-shrink:0;">
+          <path d="M 80.0 15.0 A 65 65 0 1 1 80.0 15.0 L 80.0 40.0 A 40 40 0 1 0 80.0 40.0 Z" fill="#818cf8" opacity="0.9"/>
+          <circle cx="80" cy="80" r="38" fill="#0d1117"/>
+          <text x="80" y="76" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">100%</text>
+          <text x="80" y="92" text-anchor="middle" font-size="9" fill="#9ca3af">Beyond 30</text>
+        </svg>
+        <div style="flex:1;min-width:140px;"><div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;"><div style="width:10px;height:10px;border-radius:2px;background:#818cf8;flex-shrink:0;"></div><span style="font-size:12px;color:#2EA6D4;flex:1;">Beyond 30</span><span style="font-size:13px;font-weight:800;color:#818cf8;">1</span></div></div>
+      </div>
+    </div>
+      
+    <div style="margin:32px 0;padding:24px;border-radius:16px;background:rgba(249,115,22,0.04);border:1px solid rgba(249,115,22,0.15);">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+        <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#f97316;">Page Speed Performance</div>
+        <span style="font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#2EA6D4;background:#1c2128;border:1px solid rgba(255,255,255,0.10);border-radius:4px;padding:2px 7px;">WebPageTest.org</span>
+      </div>
+      <!-- Score cards row -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;">
+        <!-- Mobile score -->
+        <div style="padding:20px 16px;border-radius:14px;background:rgba(239,68,68,0.07);border:1px solid rgba(239,68,68,0.22);text-align:center;">
+          <div style="font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#6e7681;margin-bottom:10px;">📱 Mobile</div>
+          <svg viewBox="0 0 88 52" width="88" height="52" style="display:block;margin:0 auto 4px;">
+      <path d="M 6 44 A 38 38 0 0 1 82 44" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 6.0 44.0 A 38 38 0 0 1 25.7 10.7" fill="none" stroke="#ef4444" stroke-width="8" stroke-linecap="round"/>
+    </svg>
+          <div style="font-size:48px;font-weight:900;color:#ef4444;line-height:1;margin-bottom:4px;">34</div>
+          <div style="font-size:11px;font-weight:700;color:#ef4444;">Poor</div>
+          
+          <div style="margin-top:14px;border-top:1px solid rgba(255,255,255,0.06);padding-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+            <div style="text-align:center;"><div style="font-size:13px;font-weight:800;color:#ef4444;">3.3s</div><div style="font-size:9px;color:#6e7681;margin-top:1px;">FCP</div></div>
+            <div style="text-align:center;"><div style="font-size:13px;font-weight:800;color:#ef4444;">5.0s</div><div style="font-size:9px;color:#6e7681;margin-top:1px;">LCP</div></div>
+            <div style="text-align:center;"><div style="font-size:13px;font-weight:800;color:#ef4444;">964ms</div><div style="font-size:9px;color:#6e7681;margin-top:1px;">TBT</div></div>
+            <div style="text-align:center;"><div style="font-size:13px;font-weight:800;color:#22c55e;">0.030</div><div style="font-size:9px;color:#6e7681;margin-top:1px;">CLS</div></div>
+          </div>
+        </div>
+        <!-- Desktop score -->
+        <div style="padding:20px 16px;border-radius:14px;background:rgba(249,115,22,0.07);border:1px solid rgba(249,115,22,0.22);text-align:center;">
+          <div style="font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#6e7681;margin-bottom:10px;">🖥 Desktop</div>
+          <svg viewBox="0 0 88 52" width="88" height="52" style="display:block;margin:0 auto 4px;">
+      <path d="M 6 44 A 38 38 0 0 1 82 44" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 6.0 44.0 A 38 38 0 1 1 70.0 16.3" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+    </svg>
+          <div style="font-size:48px;font-weight:900;color:#f97316;line-height:1;margin-bottom:4px;">74</div>
+          <div style="font-size:11px;font-weight:700;color:#f97316;">Good</div>
+          
+          <div style="margin-top:14px;border-top:1px solid rgba(255,255,255,0.06);padding-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+            <div style="text-align:center;"><div style="font-size:13px;font-weight:800;color:#f97316;">1.8s</div><div style="font-size:9px;color:#6e7681;margin-top:1px;">FCP</div></div>
+            <div style="text-align:center;"><div style="font-size:13px;font-weight:800;color:#f97316;">3.2s</div><div style="font-size:9px;color:#6e7681;margin-top:1px;">LCP</div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Interpretation bar -->
+      <div style="padding:12px 16px;border-radius:10px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);font-size:12px;color:#2EA6D4;line-height:1.6;">
+        ⚠ <strong style="color:#ef4444;">Critical:</strong> A mobile score of <strong style="color:#ef4444;">34</strong> means Google is actively penalizing this site in search rankings. Slow load times drive visitors away before they even see the offer.
+      </div>
+    </div>
+      
+      
+      
+      
+      
+      
+    <div style="margin:24px 0;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#818cf8;margin-bottom:8px;">&#x1F916; Live AI Visibility Test</div>
+      <div style="font-size:13px;color:#6e7681;margin-bottom:16px;">Translate Neuro was not mentioned in any of the 2 live AI queries tested. When potential customers ask AI assistants about Neurology in the area, this business does not appear in the responses. This represents a significant AI visibility gap.</div>
+      <div style="display:flex;gap:16px;margin-bottom:16px;flex-wrap:wrap;">
+        <div style="text-align:center;background:#1c2128;border-radius:8px;padding:12px 20px;border:1px solid #30363d;">
+          <div style="font-size:24px;font-weight:800;color:#ef4444;">0%</div>
+          <div style="font-size:10px;color:#6e7681;margin-top:2px;">AI Mention Rate</div>
+        </div>
+        
+        
+      </div>
+      
+      <div style="margin-bottom:16px;background:#1c2128;border-radius:10px;border:1px solid #30363d;overflow:hidden;">
+        <div style="padding:12px 16px;background:rgba(129,140,248,0.08);border-bottom:1px solid #30363d;">
+          <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#818cf8;margin-bottom:4px;">Query 1  -  Local customer researching options</div>
+          <div style="font-size:13px;font-weight:600;color:#1B75BB;">&ldquo;What are the best Neurology in Los Angeles, California?&rdquo;</div>
+        </div>
+        <div style="padding:14px 16px;">
+          <div style="font-size:12px;color:#6e7681;line-height:1.6;">When looking for top neurology specialists or centers in Los Angeles, there are several highly regarded hospitals and clinics known for their expertise in neurology. Here are some of them:
+
+1. **Ronald Reagan UCLA Medical Center**: UCLA Health is highly ranked for neurology and neurosurgery. They offer comprehensive care for a wide range of neurological conditions.
+
+2. **Cedars-Sinai Medical Cente&hellip;</div>
+          <div style="margin-top:10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+            <span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;background:rgba(239,68,68,0.15);color:#ef4444;">✗ Not Mentioned</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div style="margin-bottom:16px;background:#1c2128;border-radius:10px;border:1px solid #30363d;overflow:hidden;">
+        <div style="padding:12px 16px;background:rgba(129,140,248,0.08);border-bottom:1px solid #30363d;">
+          <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#818cf8;margin-bottom:4px;">Query 2  -  Customer asking an AI assistant for a recommendation</div>
+          <div style="font-size:13px;font-weight:600;color:#1B75BB;">&ldquo;Who do you recommend for Neurology in Los Angeles, California?&rdquo;</div>
+        </div>
+        <div style="padding:14px 16px;">
+          <div style="font-size:12px;color:#6e7681;line-height:1.6;">For neurology in Los Angeles, there are several highly regarded specialists and medical centers you might consider:
+
+1. **UCLA Health** - The Department of Neurology at UCLA is renowned for its patient care, research, and teaching. They offer a wide range of services and have many specialists focused on different aspects of neurology.
+
+2. **Cedars-Sinai Medical Center** - Known for their expert ne&hellip;</div>
+          <div style="margin-top:10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+            <span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;background:rgba(239,68,68,0.15);color:#ef4444;">✗ Not Mentioned</span>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <!-- CTA Section -->
+      <div style="margin-top:48px;padding:48px 40px;border-radius:20px;background:linear-gradient(135deg,rgba(46,166,212,0.12) 0%,rgba(46,166,212,0.04) 100%);border:1px solid rgba(46,166,212,0.25);text-align:center;">
+        <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#2ea6d4;margin-bottom:16px;">Ready to Fix This?</div>
+        <h2 style="font-size:clamp(22px,4vw,34px);font-weight:800;line-height:1.2;margin-bottom:16px;">Let&#39;s Talk About What This Means for Your Business</h2>
+        <p style="font-size:16px;color:#2EA6D4;max-width:560px;margin:0 auto 32px;line-height:1.7;">Every point on this report is a missed opportunity. In a 30-minute strategy session, we'll show you exactly what to fix first and the revenue impact of getting it right.</p>
+        <a href="https://link.actionpotential.ai/widget/booking/ksD7NPYqg5JoFugUIJnm" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 36px;border-radius:10px;background:#2ea6d4;color:#000;font-size:17px;font-weight:800;text-decoration:none;letter-spacing:0.3px;">Book Your Free Strategy Session →</a>
+      </div>
+
+      <!-- Full Report Link -->
+      <div style="margin-top:24px;text-align:center;">
+        <a href="../index.html" target="_blank" rel="noopener" style="font-size:13px;color:#6e7681;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.10);padding-bottom:2px;">View the full detailed report →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="padding:32px 0;border-top:1px solid rgba(255,255,255,0.06);text-align:center;">
+    <div class="container">
+      <div style="margin-bottom:12px;"><img src="../assets/logo.png" alt="Cary" style="max-height:40px;max-width:160px;object-fit:contain;opacity:0.75;" /></div>
+      <p style="font-size:12px;color:#6e7681;">Prepared by <strong style="color:#6e7681;">Cary</strong> &middot; Data sourced from DataForSEO, Google PageSpeed Insights</p>
+      <p style="margin-top:8px;font-size:11px;opacity:0.6;">This page uses analytics to measure engagement.</p>
+    </div>
+  </footer>
+
+  <!-- Print / Save PDF button -->
+  <button class="print-btn" onclick="window.print()" title="Print or Save as PDF">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+    Print / Save PDF
+  </button>
+</body>
+</html>
