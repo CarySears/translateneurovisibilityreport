@@ -8,30 +8,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #080d1a; color: #fff; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #ffffff; color: #231F20; }
     a { color: inherit; }
-    header { position: sticky; top: 0; z-index: 10; background: rgba(13,20,38,.8); border-bottom: 1px solid rgba(255,255,255,.1); backdrop-filter: blur(8px); }
+    header { position: sticky; top: 0; z-index: 10; background: #ffffff; border-bottom: 1px solid #e4dfdf; backdrop-filter: blur(8px); }
     .bar, main { max-width: 56rem; margin: 0 auto; padding: 1rem 1rem; }
     .bar { display: flex; align-items: center; justify-content: space-between; }
     .logo { height: 32px; object-fit: contain; }
     .eyebrow { display: flex; align-items: center; gap: .4rem; color: #6b7280; font-size: .75rem; }
     main { padding: 2.5rem 1rem 3rem; display: flex; flex-direction: column; gap: 2.5rem; }
-    .hero { border: 1px solid rgba(255,255,255,.1); border-radius: 1rem; padding: 2rem; background: linear-gradient(135deg, rgba(49,46,129,.3), #0d1426 45%, rgba(76,29,149,.2)); }
+    .hero { border: 1px solid #e4dfdf; border-radius: 1rem; padding: 2rem; background: linear-gradient(135deg, rgba(49,46,129,.3), #ffffff 45%, rgba(76,29,149,.2)); }
     .hero-row { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; }
     .ring { width: 160px; height: 160px; position: relative; }
     .ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
     .ring .num { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
     .ring strong { font-size: 2.25rem; }
-    .ring span { color: #9ca3af; font-size: .75rem; }
+    .ring span { color: #231F20; font-size: .75rem; }
     .pill { display: inline-block; margin-top: 1rem; padding: .4rem 1rem; border-radius: 999px; border: 1px solid rgba(239,68,68,.4); background: rgba(239,68,68,.2); color: #f87171; font-weight: 600; font-size: .875rem; }
     h1 { font-size: 1.875rem; margin: .25rem 0; }
     .label { color: #a5b4fc; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; margin: 0; }
     .status { color: #ef4444; font-size: 1.125rem; font-weight: 600; margin: 0 0 .75rem; }
-    .muted { color: #9ca3af; }
+    .muted { color: #231F20; }
     .small { font-size: .875rem; line-height: 1.6; }
     .chips, .meta { display: flex; flex-wrap: wrap; gap: .75rem; }
-    .meta div, .note { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: .75rem; }
-    .meta div { padding: .4rem .75rem; font-size: .75rem; color: #9ca3af; }
+    .meta div, .note { background: #f6f5f5; border: 1px solid #e4dfdf; border-radius: .75rem; }
+    .meta div { padding: .4rem .75rem; font-size: .75rem; color: #231F20; }
     .note { margin-top: 1.5rem; padding: 1rem; }
     h2 { margin: 0; font-size: 1.25rem; }
     .sec-h { display: flex; gap: .75rem; margin-bottom: 1.25rem; }
@@ -43,42 +43,43 @@
     .plat-pct { margin: 0; font-size: 1.875rem; font-weight: 700; }
     .okt { color: #34d399; font-size: .75rem; }
     .badt { color: #f87171; font-size: .75rem; }
-    .block { border: 1px solid rgba(255,255,255,.1); border-radius: .75rem; overflow: hidden; margin-bottom: 1.5rem; }
-    .block-h { display: flex; justify-content: space-between; gap: 1rem; align-items: center; padding: .75rem 1rem; border-bottom: 1px solid rgba(255,255,255,.1); }
-    .block-h.plain { background: rgba(255,255,255,.05); }
-    .qline { font-size: .875rem; color: #d1d5db; }
-    details.q { border-top: 1px solid rgba(255,255,255,.05); }
+    .block { border: 1px solid #e4dfdf; border-radius: .75rem; overflow: hidden; margin-bottom: 1.5rem; }
+    .block-h { display: flex; justify-content: space-between; gap: 1rem; align-items: center; padding: .75rem 1rem; border-bottom: 1px solid #e4dfdf; }
+    .block-h.plain { background: #f6f5f5; }
+    .qline { font-size: .875rem; color: #231F20; }
+    details.q { border-top: 1px solid #e4dfdf; }
     details.q summary { list-style: none; cursor: pointer; display: flex; gap: .75rem; align-items: center; padding: 1rem; }
     details.q summary::-webkit-details-marker { display: none; }
-    details.q summary span:last-child { color: #d1d5db; font-size: .875rem; }
+    details.q summary span:last-child { color: #231F20; font-size: .875rem; }
     .answer, .pad { padding: 0 1rem 1rem; }
     .kicker { color: #6b7280; font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 .5rem; }
-    .pre { white-space: pre-wrap; color: #d1d5db; font-size: .875rem; line-height: 1.6; margin: 0; }
+    .pre { white-space: pre-wrap; color: #231F20; font-size: .875rem; line-height: 1.6; margin: 0; }
     .badge { display: inline-flex; flex: none; align-items: center; border-radius: 999px; padding: .15rem .5rem; font-size: .75rem; font-weight: 600; }
     .badge.ok { color: #34d399; background: rgba(16,185,129,.15); border: 1px solid rgba(16,185,129,.3); }
     .badge.bad { color: #f87171; background: rgba(239,68,68,.15); border: 1px solid rgba(239,68,68,.3); }
     .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
     .stat { text-align: center; border: 1px solid rgba(139,92,246,.2); background: rgba(139,92,246,.1); border-radius: .75rem; padding: 1rem; }
     .stat strong { display: block; font-size: 1.875rem; color: #c4b5fd; }
-    .panel { border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.05); border-radius: .75rem; padding: 1.25rem; margin-top: 1.5rem; }
-    .line { display: flex; justify-content: space-between; gap: 1rem; padding: .4rem 0; border-bottom: 1px solid rgba(255,255,255,.05); font-size: .875rem; }
+    .panel { border: 1px solid #e4dfdf; background: #f4f3f3; border-radius: .75rem; padding: 1.25rem; margin-top: 1.5rem; }
+    .line { display: flex; justify-content: space-between; gap: 1rem; padding: .4rem 0; border-bottom: 1px solid #e4dfdf; font-size: .875rem; }
     .line a { color: #a78bfa; text-decoration: none; }
     .num { color: #4b5563; width: 1.25rem; display: inline-block; }
-    .track { height: 8px; background: rgba(255,255,255,.1); border-radius: 999px; overflow: hidden; }
+    .track { height: 8px; background: #f4f3f3; border-radius: 999px; overflow: hidden; }
     .fill { height: 100%; background: #8b5cf6; }
     .bar-top { display: flex; justify-content: space-between; font-size: .875rem; margin-bottom: .25rem; }
     .bar-row + .bar-row { margin-top: .75rem; }
     .cta { text-align: center; border: 1px solid rgba(99,102,241,.3); border-radius: 1rem; padding: 2rem; background: linear-gradient(135deg, rgba(49,46,129,.4), rgba(76,29,149,.3)); }
-    .cta a { display: inline-flex; background: #4f46e5; color: #fff; text-decoration: none; font-weight: 600; border-radius: .75rem; padding: .75rem 1.5rem; }
-    footer { border-top: 1px solid rgba(255,255,255,.1); text-align: center; color: #4b5563; font-size: .75rem; padding: 1.5rem; }
-    .sources { margin-top: .75rem; padding-top: .75rem; border-top: 1px solid rgba(255,255,255,.1); }
-    .chips a { color: #60a5fa; text-decoration: none; font-size: .75rem; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.05); border-radius: .5rem; padding: .25rem .5rem; }
+    .cta a { display: inline-flex; background: #4f46e5; color: #231F20; text-decoration: none; font-weight: 600; border-radius: .75rem; padding: .75rem 1.5rem; }
+    footer { border-top: 1px solid #e4dfdf; text-align: center; color: #4b5563; font-size: .75rem; padding: 1.5rem; }
+    .sources { margin-top: .75rem; padding-top: .75rem; border-top: 1px solid #e4dfdf; }
+    .chips a { color: #60a5fa; text-decoration: none; font-size: .75rem; border: 1px solid #e4dfdf; background: #f4f3f3; border-radius: .5rem; padding: .25rem .5rem; }
   </style>
+<link rel="stylesheet" href="../assets/brand.css"/>
 </head>
 <body>
-  <header>
+  <header class="ap-brand">
     <div class="bar">
-      <a href="../index.html#tab-ai"><img class="logo" src="../assets/logo.png" alt="Cary" /></a>
+      <a href="../index.html#tab-ai"><img class="logo" src="../assets/logo.png" alt="ActionPotential.AI" /></a>
       <div class="eyebrow">AI Visibility Report</div>
     </div>
   </header>
@@ -96,20 +97,20 @@
           <p class="label">AI Visibility Report</p>
           <h1>Translate Neuro</h1>
           <p class="status">Low Visibility</p>
-          <p class="muted small" style="max-width:28rem;">Your business is rarely or never mentioned by AI assistants. Competitors may have an edge.</p>
-          <div class="meta" style="margin-top:1rem;">
-            <div><strong style="color:#fff">0</strong> of <strong style="color:#fff">15</strong> queries mentioned you</div>
+          <p class="muted small" style="max-width:28rem">Your business is rarely or never mentioned by AI assistants. Competitors may have an edge.</p>
+          <div class="meta" style="margin-top:1rem">
+            <div><strong style="color:#231F20">0</strong> of <strong style="color:#231F20">15</strong> queries mentioned you</div>
             <div>Scanned Oct 20, 2026</div>
           </div>
         </div>
       </div>
       <div class="note">
-        <p style="margin:0 0 .25rem;font-weight:600;">What does this mean for your business?</p>
-        <p class="muted small" style="margin:0;">When potential customers ask AI assistants like ChatGPT or Google Gemini for recommendations in your industry, your AI Visibility Score shows how often your business comes up. A higher score means more organic exposure to people actively looking for what you offer — without paying for ads.</p>
+        <p style="margin:0 0 .25rem;font-weight:600">What does this mean for your business?</p>
+        <p class="muted small" style="margin:0">When potential customers ask AI assistants like ChatGPT or Google Gemini for recommendations in your industry, your AI Visibility Score shows how often your business comes up. A higher score means more organic exposure to people actively looking for what you offer — without paying for ads.</p>
       </div>
     </section>
     <section>
-      <div class="sec-h"><div class="icon">◈</div><div><h2>How You Appear on Each AI Platform</h2><p class="muted small" style="margin:.2rem 0 0;">We asked each major AI assistant your target questions and tracked whether your business was mentioned.</p></div></div>
+      <div class="sec-h"><div class="icon">◈</div><div><h2>How You Appear on Each AI Platform</h2><p class="muted small" style="margin:.2rem 0 0">We asked each major AI assistant your target questions and tracked whether your business was mentioned.</p></div></div>
       <div class="plats"><article class="plat" style="background:rgba(16,163,127,.1);border-color:rgba(16,163,127,.3)">
       <p class="plat-name">ChatGPT</p>
       <p class="plat-pct" style="color:#10a37f">0%</p>
@@ -133,7 +134,7 @@
     </article></div>
     </section>
     <section>
-      <div class="sec-h"><div class="icon">☰</div><div><h2>Question-by-Question Breakdown</h2><p class="muted small" style="margin:.2rem 0 0;">These are the exact questions we asked each AI, and whether your business was included in the answer.</p></div></div>
+      <div class="sec-h"><div class="icon">☰</div><div><h2>Question-by-Question Breakdown</h2><p class="muted small" style="margin:.2rem 0 0">These are the exact questions we asked each AI, and whether your business was included in the answer.</p></div></div>
       <section class="block">
       <div class="block-h" style="background:rgba(16,163,127,.1);border-color:rgba(16,163,127,.3)">
         <div><strong>ChatGPT</strong> <span class="muted">(0/3 mentions)</span></div>
@@ -506,7 +507,7 @@ Call before scheduling to verify Chinese dialect availability, insurance partici
     </section>
     </section>
     <section>
-      <div class="sec-h"><div class="icon">⌕</div><div><h2>Live ChatGPT Responses</h2><p class="muted small" style="margin:.2rem 0 0;">These are real-time responses from ChatGPT for each of your target questions.</p></div></div>
+      <div class="sec-h"><div class="icon">⌕</div><div><h2>Live ChatGPT Responses</h2><p class="muted small" style="margin:.2rem 0 0">These are real-time responses from ChatGPT for each of your target questions.</p></div></div>
       <article class="block">
       <div class="block-h plain"><div class="qline">My mom is having memory problems. Can you recommend a good memory specialist in Los Angeles who can check for Alzheimer&#x27;s or dementia?&quot;</div><span class="badge bad">✗ Not Mentioned</span></div>
       <div class="pad"><p class="pre">I’m sorry your mom is having memory problems. It’s understandable to be concerned, and you’re doing the right thing by looking for a specialist. Memory changes can have several causes, including Alzheimer’s disease, other forms of dementia, medication side effects, sleep problems, vitamin deficiencies, and thyroid issues. **A thorough evaluation by a memory specialist can help determine what’s causing her symptoms.**
@@ -814,19 +815,19 @@ These details can make a big difference in finding a suitable doctor who is actu
     </article>
     </section>
     <section>
-      <div class="sec-h"><div class="icon">▦</div><div><h2>AI Mentions Intelligence</h2><p class="muted small" style="margin:.2rem 0 0;">How AI platforms are tracking your brand across the web — total mentions, platform breakdown, and who else AI recommends in your category.</p></div></div>
+      <div class="sec-h"><div class="icon">▦</div><div><h2>AI Mentions Intelligence</h2><p class="muted small" style="margin:.2rem 0 0">How AI platforms are tracking your brand across the web — total mentions, platform breakdown, and who else AI recommends in your category.</p></div></div>
       <div class="stats">
-        <div class="stat"><strong>24</strong><span class="muted">Total AI Mentions</span><p class="muted" style="font-size:.75rem;">Times your brand appears in AI responses</p></div>
-        <div class="stat"><strong>15,441</strong><span class="muted">Monthly AI Search Volume</span><p class="muted" style="font-size:.75rem;">Estimated monthly searches where you appear</p></div>
+        <div class="stat"><strong>24</strong><span class="muted">Total AI Mentions</span><p class="muted" style="font-size:.75rem">Times your brand appears in AI responses</p></div>
+        <div class="stat"><strong>15,441</strong><span class="muted">Monthly AI Search Volume</span><p class="muted" style="font-size:.75rem">Estimated monthly searches where you appear</p></div>
       </div>
-      <div class="panel"><p style="margin:0 0 1rem;font-weight:600;">Mentions by Platform</p><div class="bar-row"><div class="bar-top"><span>Google AI Overview</span><span class="muted">21 mentions</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div><div class="bar-row"><div class="bar-top"><span>ChatGPT</span><span class="muted">3 mentions</span></div><div class="track"><div class="fill" style="width:14%"></div></div></div></div>
-      <div class="panel"><p style="margin:0 0 1rem;font-weight:600;">Top Domains AI Cites as Sources</p><div class="line"><div><span class="num">1</span><a href="https://en.wikipedia.org" target="_blank" rel="noopener noreferrer">en.wikipedia.org</a></div><span class="muted">6 mentions</span></div><div class="line"><div><span class="num">2</span><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">www.youtube.com</a></div><span class="muted">5 mentions</span></div><div class="line"><div><span class="num">3</span><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">www.facebook.com</a></div><span class="muted">4 mentions</span></div><div class="line"><div><span class="num">4</span><a href="https://pmc.ncbi.nlm.nih.gov" target="_blank" rel="noopener noreferrer">pmc.ncbi.nlm.nih.gov</a></div><span class="muted">3 mentions</span></div><div class="line"><div><span class="num">5</span><a href="https://www.hubermanlab.com" target="_blank" rel="noopener noreferrer">www.hubermanlab.com</a></div><span class="muted">3 mentions</span></div><div class="line"><div><span class="num">6</span><a href="https://www.apna.org" target="_blank" rel="noopener noreferrer">www.apna.org</a></div><span class="muted">3 mentions</span></div><div class="line"><div><span class="num">7</span><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">www.instagram.com</a></div><span class="muted">3 mentions</span></div><div class="line"><div><span class="num">8</span><a href="https://pitchbook.com" target="_blank" rel="noopener noreferrer">pitchbook.com</a></div><span class="muted">3 mentions</span></div></div>
+      <div class="panel"><p style="margin:0 0 1rem;font-weight:600">Mentions by Platform</p><div class="bar-row"><div class="bar-top"><span>Google AI Overview</span><span class="muted">21 mentions</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div><div class="bar-row"><div class="bar-top"><span>ChatGPT</span><span class="muted">3 mentions</span></div><div class="track"><div class="fill" style="width:14%"></div></div></div></div>
+      <div class="panel"><p style="margin:0 0 1rem;font-weight:600">Top Domains AI Cites as Sources</p><div class="line"><div><span class="num">1</span><a href="https://en.wikipedia.org" target="_blank" rel="noopener noreferrer">en.wikipedia.org</a></div><span class="muted">6 mentions</span></div><div class="line"><div><span class="num">2</span><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">www.youtube.com</a></div><span class="muted">5 mentions</span></div><div class="line"><div><span class="num">3</span><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">www.facebook.com</a></div><span class="muted">4 mentions</span></div><div class="line"><div><span class="num">4</span><a href="https://pmc.ncbi.nlm.nih.gov" target="_blank" rel="noopener noreferrer">pmc.ncbi.nlm.nih.gov</a></div><span class="muted">3 mentions</span></div><div class="line"><div><span class="num">5</span><a href="https://www.hubermanlab.com" target="_blank" rel="noopener noreferrer">www.hubermanlab.com</a></div><span class="muted">3 mentions</span></div><div class="line"><div><span class="num">6</span><a href="https://www.apna.org" target="_blank" rel="noopener noreferrer">www.apna.org</a></div><span class="muted">3 mentions</span></div><div class="line"><div><span class="num">7</span><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">www.instagram.com</a></div><span class="muted">3 mentions</span></div><div class="line"><div><span class="num">8</span><a href="https://pitchbook.com" target="_blank" rel="noopener noreferrer">pitchbook.com</a></div><span class="muted">3 mentions</span></div></div>
     </section>
     <section class="cta">
       <h2>Ready to Improve Your AI Visibility?</h2>
-      <p class="muted" style="max-width:36rem;margin:0 auto 1.5rem;">The businesses that show up in AI answers today are capturing customers who never even search Google. We can help you build a strategy to improve your visibility across all major AI platforms.</p>
+      <p class="muted" style="max-width:36rem;margin:0 auto 1.5rem">The businesses that show up in AI answers today are capturing customers who never even search Google. We can help you build a strategy to improve your visibility across all major AI platforms.</p>
       <a href="https://link.actionpotential.ai/widget/booking/ksD7NPYqg5JoFugUIJnm" target="_blank" rel="noopener noreferrer">Schedule a Free Strategy Session</a>
-      <p class="muted" style="font-size:.75rem;margin-top:1rem;">Powered by Cary</p>
+      <p class="muted" style="font-size:.75rem;margin-top:1rem">Powered by Cary</p>
     </section>
   </main>
   <footer>

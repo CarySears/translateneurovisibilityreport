@@ -14,8 +14,8 @@
     html, body { margin: 0; padding: 0; }
     body {
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0a0f1e;
-      color: #fff;
+      background: #ffffff;
+      color: #231F20;
       line-height: 1.5;
       min-height: 100vh;
     }
@@ -23,7 +23,7 @@
     .header {
       position: relative;
       overflow: hidden;
-      background: linear-gradient(135deg, #2ea6d4 0%, #0a0f1e 100%);
+      background: linear-gradient(135deg, #2ea6d4 0%, #ffffff 100%);
     }
     .header-glow {
       position: absolute;
@@ -38,7 +38,7 @@
       width: 24rem;
       height: 24rem;
       border-radius: 999px;
-      background: rgba(255,255,255,0.2);
+      background: #f4f3f3;
       filter: blur(48px);
     }
     .wrap { position: relative; max-width: 56rem; margin: 0 auto; padding: 2.5rem 1.5rem; }
@@ -47,7 +47,7 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      color: rgba(255,255,255,0.6);
+      color: #231F20;
       font-size: 0.75rem;
     }
     h1 { margin: 0.25rem 0 0; font-size: clamp(1.5rem, 3vw, 1.875rem); font-weight: 700; }
@@ -56,7 +56,7 @@
       flex-wrap: wrap;
       gap: 0.75rem;
       margin-top: 0.25rem;
-      color: rgba(255,255,255,0.6);
+      color: #231F20;
       font-size: 0.875rem;
     }
     .meta span, .kicker { display: inline-flex; align-items: center; gap: 0.25rem; }
@@ -69,7 +69,7 @@
       border-radius: 999px;
       background: #2ea6d4cc;
       border: 1px solid #2ea6d4;
-      color: #fff;
+      color: #231F20;
       font-size: 0.875rem;
       font-weight: 600;
       white-space: nowrap;
@@ -79,11 +79,11 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid #e4dfdf;
       padding-bottom: 0.75rem;
     }
     .section-title h2 { margin: 0; font-size: 1.125rem; font-weight: 600; }
-    .section-title svg { color: #2ea6d4; }
+    .section-title svg { color: #231F20; }
     .stats {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -93,8 +93,8 @@
     @media (min-width: 768px) { .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
     @media (min-width: 1024px) { .stats { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
     .stat {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: #f6f5f5;
+      border: 1px solid #e4dfdf;
       border-radius: 0.5rem;
       padding: 1rem;
     }
@@ -103,7 +103,7 @@
       align-items: center;
       gap: 0.5rem;
       margin-bottom: 0.5rem;
-      color: rgba(255,255,255,0.55);
+      color: #231F20;
       font-size: 0.75rem;
     }
     .stat p { margin: 0; font-weight: 600; font-size: 0.875rem; }
@@ -112,8 +112,8 @@
     .amber { color: #fcd34d; }
     .card {
       margin-top: 1rem;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: #f4f3f3;
+      border: 1px solid #e4dfdf;
       border-radius: 0.75rem;
       padding: 1.25rem;
     }
@@ -130,16 +130,16 @@
     .badge.bad { background: rgba(239,68,68,0.2); color: #fca5a5; border-color: rgba(239,68,68,0.3); }
     .row { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
     .opp { display: flex; align-items: flex-start; gap: 0.75rem; }
-    .opp p { margin: 0; color: rgba(255,255,255,0.8); font-size: 0.875rem; }
+    .opp p { margin: 0; color: #231F20; font-size: 0.875rem; }
     .opp + .opp { margin-top: 0.75rem; }
     .cta { text-align: center; padding: 1.5rem 0; }
-    .cta p { color: rgba(255,255,255,0.7); font-size: 0.875rem; margin: 0 0 1rem; }
+    .cta p { color: #231F20; font-size: 0.875rem; margin: 0 0 1rem; }
     .cta a {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
       background: #2ea6d4;
-      color: #fff;
+      color: #231F20;
       text-decoration: none;
       font-weight: 600;
       border-radius: 0.5rem;
@@ -148,26 +148,27 @@
     }
     .cta a:hover { filter: brightness(1.08); }
     footer {
-      border-top: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid #e4dfdf;
       padding: 1.5rem;
       text-align: center;
-      color: rgba(255,255,255,0.55);
+      color: #231F20;
       font-size: 0.75rem;
     }
     footer p { margin: 0.25rem 0; }
-    footer .dim { color: rgba(255,255,255,0.3); }
-    footer .dimmer { color: rgba(255,255,255,0.2); }
+    footer .dim { color: #231F20; }
+    footer .dimmer { color: #231F20; }
     footer a { color: inherit; }
-    footer a:hover { color: rgba(255,255,255,0.4); }
+    footer a:hover { color: #231F20; }
     svg { flex-shrink: 0; }
   </style>
+<link rel="stylesheet" href="../assets/brand.css"/>
 </head>
 <body>
-  <header class="header">
+  <header class="ap-brand header">
     <div class="header-glow" aria-hidden="true"><span></span></div>
     <div class="wrap header-row">
       <div>
-        <a href="../index.html"><img class="logo" src="../assets/logo.png" alt="Cary" /></a>
+        <a href="../index.html"><img class="logo" src="../assets/logo.png" alt="ActionPotential.AI" /></a>
         <div class="kicker">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
           <span>Ad Intelligence Report</span>
@@ -268,7 +269,7 @@
         <div class="row">
           <span class="badge ok">✓ No Active Google Ads</span>
         </div>
-        <p style="margin:1rem 0 0;font-size:0.75rem;color:rgba(255,255,255,0.55);">Registered as: <strong style="color:#fff;">Translate Neuro</strong></p>
+        <p style="margin:1rem 0 0;font-size:0.75rem;color:#231F20">Registered as: <strong style="color:#231F20">Translate Neuro</strong></p>
       </div>
     </section>
 
