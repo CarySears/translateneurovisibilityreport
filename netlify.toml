@@ -1,0 +1,11 @@
+# Netlify settings for the Translate Neuroscience growth plan
+[build]
+  publish = "."
+
+# Keep the plan out of search engines (it is a private client page)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
