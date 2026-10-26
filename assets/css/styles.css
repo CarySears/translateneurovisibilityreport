@@ -248,6 +248,8 @@ table.wide { min-width: 640px; }
 .meter .bar { position: relative; height: 10px; border-radius: 999px; background: #EDF1F4; margin-top: 8px; }
 .meter .fill { position: absolute; inset: 0 auto 0 0; border-radius: 999px; background: var(--coral); }
 .meter.pass .fill { background: var(--green); }
+.meter.mid .fill { background: #E09A2B; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .meter .target { position: absolute; top: -4px; bottom: -4px; width: 3px; border-radius: 2px; background: var(--green); }
 .scorebox { display: flex; gap: 14px; }
 .scorebox .card { flex: 1; }
