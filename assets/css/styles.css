@@ -246,6 +246,23 @@ table.wide { min-width: 640px; }
 .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: var(--muted); margin-top: 16px; }
 .legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 6px; }
 
+/* ---------- Accordions (AI visibility) ---------- */
+.acc { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); margin-top: 14px; overflow: hidden; }
+.acc summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 20px; }
+.acc summary::-webkit-details-marker { display: none; }
+.acc summary::after { content: ""; flex: none; width: 9px; height: 9px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg); transition: transform .2s ease; }
+.acc[open ] summary::after { transform: rotate(225deg); }
+.acc summary:hover { background: var(--tint-2); }
+.acc .acc-q { font-weight: 600; font-size: 15px; }
+.acc-body { padding: 4px 20px 20px; border-top: 1px solid var(--line); }
+.acc-body p { font-size: 14.5px; margin-top: 10px; }
+.acc-body h4 { font-size: 16px; margin-top: 18px; }
+.acc-body h5 { font-size: 14.5px; margin-top: 14px; }
+.acc-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; margin-top: 14px; }
+.acc-row p { margin-top: 0; }
+.acc-note { color: #B2492C; margin-top: 4px !important; }
+.ai-score .num { font-size: 56px; }
+
 /* ---------- Speed meters ---------- */
 .meter + .meter { margin-top: 22px; }
 .meter .top { display: flex; justify-content: space-between; gap: 12px; font-size: 14.5px; }
