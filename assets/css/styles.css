@@ -241,6 +241,12 @@ table.wide { min-width: 640px; }
 .heatgrid { display: grid; grid-template-columns: repeat(13, 1fr); gap: 3px; margin-top: 16px; max-width: 380px; }
 .heatgrid span { aspect-ratio: 1; border-radius: 3px; background: #E7ECF0; display: grid; place-items: center; font-size: 9px; color: #9AA6B2; }
 .heatgrid span.center { background: var(--ink); }
+.heatgrid.notrank span, .heatgrid.notrank span.center { background: #E53238; color: #fff; }
+.statbox { background: var(--tint-2); border-radius: var(--radius); padding: 16px 18px; }
+.statbox .num { font-family: var(--font-head); font-weight: 700; color: var(--coral); font-size: 28px; line-height: 1.05; }
+.statbox .label { margin-top: 6px; font-size: 13px; color: var(--muted); }
+.insight { margin-top: 16px; background: #FDECEA; border: 1px solid #F3C1BC; border-radius: var(--radius); padding: 16px 18px; font-size: 14.5px; }
+.insight b { color: var(--coral); }
 .heat .result { margin-top: 14px; display: flex; gap: 10px; align-items: baseline; }
 .heat .result strong { font-family: var(--font-head); font-size: 26px; color: var(--coral); }
 .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: var(--muted); margin-top: 16px; }
