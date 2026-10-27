@@ -199,6 +199,12 @@ sup { font-size: .68em; line-height: 0; color: var(--muted); }
 .checks .yes .mk { background: #E3F3EC; color: var(--green); }
 .checks .no .mk { background: #FCEBE5; color: var(--coral); }
 .checks .mk .icon { width: 16px; height: 16px; stroke-width: 2.5; }
+.checks li.detail { align-items: flex-start; }
+.checks li.detail .mk { margin-top: 2px; }
+.checks li.detail .st { margin-top: 5px; }
+.checks .ck { flex: 1; min-width: 0; }
+.checks .ck-title { display: block; font-weight: 600; color: var(--ink); }
+.checks .ck p { margin-top: 4px; font-size: 14px; line-height: 1.55; color: var(--muted); }
 
 .pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--tint-2); color: var(--text); white-space: nowrap; }
 .pill.warn, .pill.high { background: #FCEBE5; color: #B2492C; }
