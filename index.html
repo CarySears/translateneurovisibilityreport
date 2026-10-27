@@ -373,11 +373,10 @@
           <div class="bar"><div class="fill"></div><div class="target"></div></div>
         </div>
         <div class="meter pass" data-value="92" data-target="90">
-          <div class="top"><span>SEO</span><b>92 <span class="t">target 90</span></b></div>
+          <div class="top"><span>SEO Basics</span><b>92 <span class="t">target 90</span></b></div>
           <div class="bar"><div class="fill"></div><div class="target"></div></div>
         </div>
       </div>
-      <p class="small mt-20">Agentic Browsing: <b>2 of 4</b> checks passed — an AI-agent readiness score Google is still developing.</p>
     </div>
     <div class="card">
       <div class="label-row"><h3>Desktop</h3><span class="pill blue">Lighthouse</span></div>
@@ -395,7 +394,7 @@
           <div class="bar"><div class="fill"></div><div class="target"></div></div>
         </div>
         <div class="meter pass" data-value="92" data-target="90">
-          <div class="top"><span>SEO</span><b>92 <span class="t">target 90</span></b></div>
+          <div class="top"><span>SEO Basics</span><b>92 <span class="t">target 90</span></b></div>
           <div class="bar"><div class="fill"></div><div class="target"></div></div>
         </div>
       </div>
@@ -440,6 +439,7 @@
         <div class="item"><div class="num">53%</div><p>of mobile site visits are abandoned when a page takes longer than 3 seconds to load.<sup>7</sup></p></div>
         <div class="item"><div class="num">2.5&nbsp;s</div><p>is Google’s target for main content. Core Web Vitals are part of the page experience signals Google’s ranking systems consider.<sup>6</sup></p></div>
         <div class="item"><div class="num">4.3&nbsp;s</div><p>is how long mobile visitors wait for the main content here — past the point where many people give up and keep searching.</p></div>
+        <div class="item"><div class="num">58.5%</div><p>of worldwide website traffic came from mobile devices in 2025, so most families will meet this site on a phone first. It should be built mobile-first, not adapted to phones as an afterthought.<sup>16</sup></p></div>
       </div>
     </div>
   </div>
@@ -456,7 +456,6 @@
           <tr><td><span class="area">SEO basics</span></td><td><span class="pill med">92</span></td><td><span class="pill med">92</span></td><td>The only scored miss on both is a missing meta description. Indexing, title, links, robots.txt, image alt text, hreflang and canonical all pass.</td></tr>
           <tr><td><span class="area">Best practices</span></td><td><span class="pill med">92</span></td><td><span class="pill med">92</span></td><td>The logo is served at the wrong aspect ratio, two Wix requests log console errors (403 and 404), and standard security headers (CSP, HSTS, COOP, frame control) are missing — those last items are noted but not scored.</td></tr>
           <tr><td><span class="area">Weight and caching</span></td><td colspan="2"><span class="pill med">461 KiB total</span></td><td>Static files are cached for only 1 hour (about 146 KiB could be saved with longer caching), 44 KiB of JavaScript is unused, CSS blocks the first render, and the oversized logo could save about 10 KiB.</td></tr>
-          <tr><td><span class="area">AI-agent readiness</span></td><td><span class="pill med">2 of 4</span></td><td><span class="pill low">Not scored</span></td><td>The llms.txt file follows Google’s recommendations, but the accessibility tree is not well-formed (same unnamed menu button) and ai-catalog.json returns a web page instead of valid JSON, so AI agents cannot read the catalog.</td></tr>
         </tbody>
       </table>
     </div>
@@ -468,7 +467,7 @@
       <ul class="bullets mt-16">
         <li><b>Speed up mobile’s main content:</b> load the headline font and hero content first, set fonts to swap in without hiding text, and defer scripts and styles that are not needed for the first screen, so the 4.3 s wait shrinks toward the 2.5 s target.</li>
         <li><b>Add the missing meta description</b> — the only scored SEO failure on both reports, and the text Google shows under your name in search results.</li>
-        <li><b>Fix accessibility basics:</b> darken the muted text that fails contrast, wrap the page content in a main landmark, and give the mobile menu button an accessible name. This lifts Accessibility on both, and AI-agent readiness too.</li>
+        <li><b>Fix accessibility basics:</b> darken the muted text that fails contrast, wrap the page content in a main landmark, and give the mobile menu button an accessible name. This lifts Accessibility on both.</li>
       </ul>
     </div>
     <div class="card">
@@ -476,7 +475,7 @@
       <ul class="bullets mt-16">
         <li><b>Cache static files for longer</b> than 1 hour and remove the 44 KiB of unused JavaScript and duplicate code, so repeat visits and slower phones load less.</li>
         <li><b>Serve the logo at the size it is shown</b> and in the right proportions — worth about 10 KiB and a cleaner header on every page.</li>
-        <li><b>Repair or remove ai-catalog.json</b> so it returns valid JSON (or nothing), and clear the two failing Wix requests behind the console errors.</li>
+        <li><b>Clear the console errors</b> by fixing the two failing Wix requests behind them (403 and 404), so the site stays clean for browsers and tools alike.</li>
         <li><b>Add standard security headers</b> (CSP, HSTS, COOP and frame control) through the site’s hosting wherever Wix allows it.</li>
       </ul>
     </div>
@@ -679,6 +678,18 @@
         </tbody>
       </table>
     </div>
+  </div>
+
+  <div class="block">
+    <div class="label-row"><h3>AI-agent readiness — Google Agentic Browsing</h3><span class="pill med">2 / 4</span></div>
+    <p class="intro">Google’s Agentic Browsing checks whether AI agents can understand and use a page: a stable layout, a well-formed accessibility tree, a valid AI catalogue and an llms.txt file that follows current recommendations. This came from the mobile PageSpeed report.<sup>15</sup></p>
+    <ul class="checks mt-16">
+      <li class="yes"><span class="mk"><svg class="icon"><use href="#i-check"/></svg></span>Layout stability<span class="st">Passed — no layout shift (CLS 0)</span></li>
+      <li class="yes"><span class="mk"><svg class="icon"><use href="#i-check"/></svg></span>llms.txt<span class="st">Passed — follows current recommendations</span></li>
+      <li class="no"><span class="mk"><svg class="icon"><use href="#i-minus"/></svg></span>Accessibility tree<span class="st">Not passed — the mobile menu button has no accessible name</span></li>
+      <li class="no"><span class="mk"><svg class="icon"><use href="#i-minus"/></svg></span>ai-catalog.json<span class="st">Not passed — returns a web page instead of valid JSON</span></li>
+    </ul>
+    <p class="intro mt-16"><b>To improve:</b> give the mobile menu button an accessible name so agents can identify it, and repair or remove ai-catalog.json so it returns valid JSON (or nothing).</p>
   </div>
 
   <div class="block">
@@ -1116,6 +1127,7 @@
     <li>InsideSales.com and Dr. James B. Oldroyd, MIT, <a href="https://web.archive.org/web/20090529010553/http://www.leadresponsemanagement.org/mit_study" target="_blank" rel="noopener">Lead Response Management Study</a>, 2007. More than 15,000 web leads and more than 100,000 call attempts across six companies</li>
     <li>Nielsen Norman Group, <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="noopener">“How Long Do Users Stay on Web Pages?”</a>, September 2011. Users often leave a web page in 10–20 seconds unless it clearly holds their attention</li>
     <li>Google, <a href="https://pagespeed.web.dev/analysis/https-translateneuro-com/fyydac0aur?form_factor=mobile" target="_blank" rel="noopener">PageSpeed Insights analysis of translateneuro.com</a> (Lighthouse 13.5.0), October 27, 2026. Mobile lab test (emulated Moto G Power, Slow 4G); desktop figures from a Lighthouse 13.5.0 desktop run the same day</li>
+    <li>StatCounter Global Stats, via Statista, <a href="https://www.statista.com/chart/35951/share-of-mobile-device-website-traffic-worldwide-since-2010/" target="_blank" rel="noopener">“Share of mobile device website traffic worldwide,”</a> 2025: mobile devices accounted for 58.5% of worldwide website traffic</li>
   </ol>
 </section>
 
