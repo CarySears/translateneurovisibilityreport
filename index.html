@@ -352,49 +352,137 @@
 <section class="panel" id="performance" role="tabpanel">
   <div class="panel-head">
     <div class="eyebrow">From your audit <span class="sep">·</span> Website performance</div>
-    <h2>Website speed: pages load slowly on phones, where most families will look first</h2>
+    <h2>Website performance: fast on desktop, held back on mobile</h2>
+    <p class="intro">Google PageSpeed Insights (Lighthouse 13.5.0) tested translateneuro.com on October 27, 2026. Desktop scores are strong; on mobile, the main content takes too long to appear, and a handful of fixes would lift every score at once.</p>
+  </div>
+
+  <div class="block grid g-2">
+    <div class="card">
+      <div class="label-row"><h3>Mobile</h3><span class="pill med">PageSpeed Insights</span></div>
+      <div class="mt-16">
+        <div class="meter mid" data-value="77" data-target="90">
+          <div class="top"><span>Performance</span><b>77 <span class="t">target 90</span></b></div>
+          <div class="bar"><div class="fill"></div><div class="target"></div></div>
+        </div>
+        <div class="meter mid" data-value="80" data-target="90">
+          <div class="top"><span>Accessibility</span><b>80 <span class="t">target 90</span></b></div>
+          <div class="bar"><div class="fill"></div><div class="target"></div></div>
+        </div>
+        <div class="meter pass" data-value="92" data-target="90">
+          <div class="top"><span>Best Practices</span><b>92 <span class="t">target 90</span></b></div>
+          <div class="bar"><div class="fill"></div><div class="target"></div></div>
+        </div>
+        <div class="meter pass" data-value="92" data-target="90">
+          <div class="top"><span>SEO</span><b>92 <span class="t">target 90</span></b></div>
+          <div class="bar"><div class="fill"></div><div class="target"></div></div>
+        </div>
+      </div>
+      <p class="small mt-20">Agentic Browsing: <b>2 of 4</b> checks passed — an AI-agent readiness score Google is still developing.</p>
+    </div>
+    <div class="card">
+      <div class="label-row"><h3>Desktop</h3><span class="pill blue">Lighthouse</span></div>
+      <div class="mt-16">
+        <div class="meter pass" data-value="96" data-target="90">
+          <div class="top"><span>Performance</span><b>96 <span class="t">target 90</span></b></div>
+          <div class="bar"><div class="fill"></div><div class="target"></div></div>
+        </div>
+        <div class="meter pass" data-value="90" data-target="90">
+          <div class="top"><span>Accessibility</span><b>90 <span class="t">target 90</span></b></div>
+          <div class="bar"><div class="fill"></div><div class="target"></div></div>
+        </div>
+        <div class="meter pass" data-value="92" data-target="90">
+          <div class="top"><span>Best Practices</span><b>92 <span class="t">target 90</span></b></div>
+          <div class="bar"><div class="fill"></div><div class="target"></div></div>
+        </div>
+        <div class="meter pass" data-value="92" data-target="90">
+          <div class="top"><span>SEO</span><b>92 <span class="t">target 90</span></b></div>
+          <div class="bar"><div class="fill"></div><div class="target"></div></div>
+        </div>
+      </div>
+      <p class="small mt-20">Same tests, desktop conditions: no throttled mobile network or phone CPU, so content paints much sooner.</p>
+    </div>
   </div>
 
   <div class="block split">
     <div class="card">
-      <h3>Speed on translateneuro.com</h3>
+      <h3>Lab metrics</h3>
       <div class="mt-20">
-        <div class="meter" data-value="5.0" data-target="2.5">
-          <div class="top"><span>Main content appears (real users, mobile)</span><b>5.0&nbsp;s <span class="t">target 2.5&nbsp;s</span></b></div>
+        <div class="meter" data-value="4.3" data-target="2.5">
+          <div class="top"><span>Main content appears (mobile)</span><b>4.3&nbsp;s <span class="t">target 2.5&nbsp;s</span></b></div>
           <div class="bar"><div class="fill"></div><div class="target"></div></div>
         </div>
-        <div class="meter" data-value="3.2" data-target="2.5">
-          <div class="top"><span>Main content appears (real users, desktop)</span><b>3.2&nbsp;s <span class="t">target 2.5&nbsp;s</span></b></div>
+        <div class="meter pass" data-value="1.1" data-target="2.5">
+          <div class="top"><span>Main content appears (desktop)</span><b>1.1&nbsp;s <span class="t">target 2.5&nbsp;s</span></b></div>
           <div class="bar"><div class="fill"></div><div class="target"></div></div>
         </div>
-        <div class="meter" data-value="3.3" data-target="1.8">
-          <div class="top"><span>First content appears (lab test, mobile)</span><b>3.3&nbsp;s <span class="t">target 1.8&nbsp;s</span></b></div>
+        <div class="meter" data-value="1.9" data-target="1.8">
+          <div class="top"><span>First content appears (mobile)</span><b>1.9&nbsp;s <span class="t">target 1.8&nbsp;s</span></b></div>
           <div class="bar"><div class="fill"></div><div class="target"></div></div>
         </div>
-        <div class="meter" data-value="964" data-target="200">
-          <div class="top"><span>Too busy to respond to taps (lab test, mobile)</span><b>964&nbsp;ms <span class="t">target 200&nbsp;ms</span></b></div>
+        <div class="meter" data-value="7.2" data-target="3.4">
+          <div class="top"><span>Page visibly fills in (mobile)</span><b>7.2&nbsp;s <span class="t">target 3.4&nbsp;s</span></b></div>
           <div class="bar"><div class="fill"></div><div class="target"></div></div>
         </div>
-        <div class="meter pass" data-value="0.03" data-target="0.10">
-          <div class="top"><span>Layout stays steady while loading (real users)</span><b>0.03 <span class="t">target 0.10</span></b></div>
+        <div class="meter pass" data-value="0" data-target="0.10">
+          <div class="top"><span>Layout shift (mobile / desktop)</span><b>0 / 0.03 <span class="t">target under 0.10</span></b></div>
+          <div class="bar"><div class="fill"></div><div class="target"></div></div>
+        </div>
+        <div class="meter pass" data-value="10" data-target="200">
+          <div class="top"><span>Too busy to respond to taps (desktop)</span><b>10&nbsp;ms <span class="t">target 200&nbsp;ms</span></b></div>
           <div class="bar"><div class="fill"></div><div class="target"></div></div>
         </div>
       </div>
-      <p class="small mt-20">Green mark = Google’s target. Real-user and lab numbers come from different tests, so compare each one to its target, not to each other.</p>
+      <p class="small mt-20">Green mark = Google’s target. These are single-session lab tests (mobile: Moto G Power on Slow 4G), so treat them as a consistent yardstick, not a census of real visitors. On mobile the page was never busy blocking taps (0&nbsp;ms) and nothing jumped around as it loaded (layout shift 0).</p>
     </div>
     <div>
-      <div class="scorebox">
-        <div class="card stat coral"><div class="num">34</div><div class="label">mobile performance score, out of 100</div></div>
-        <div class="card stat"><div class="num">74</div><div class="label">desktop performance score, out of 100</div></div>
-      </div>
-      <div class="why mt-20">
+      <div class="why">
         <h3>Why this matters</h3>
         <div class="item"><div class="num">53%</div><p>of mobile site visits are abandoned when a page takes longer than 3 seconds to load.<sup>7</sup></p></div>
         <div class="item"><div class="num">2.5&nbsp;s</div><p>is Google’s target for main content. Core Web Vitals are part of the page experience signals Google’s ranking systems consider.<sup>6</sup></p></div>
+        <div class="item"><div class="num">4.3&nbsp;s</div><p>is how long mobile visitors wait for the main content here — past the point where many people give up and keep searching.</p></div>
       </div>
     </div>
   </div>
 
+  <div class="block">
+    <h3 class="block-title">What the reports found</h3>
+    <div class="table-wrap">
+      <table class="wide">
+        <thead><tr><th>Finding</th><th>Mobile</th><th>Desktop</th><th>What Lighthouse found</th></tr></thead>
+        <tbody>
+          <tr><td><span class="area">Main content speed</span></td><td><span class="pill high">4.3 s</span></td><td><span class="pill ok">1.1 s</span></td><td>On mobile, the headline waits on a chain of scripts, stylesheets and web fonts (longest chain about 4.3 s). The delay is in rendering the content, not in reaching the server.</td></tr>
+          <tr><td><span class="area">Stability and responsiveness</span></td><td><span class="pill ok">Strong</span></td><td><span class="pill ok">Strong</span></td><td>No layout shift on mobile (0) and almost none on desktop (0.03); the page is rarely too busy to respond to taps (0–10 ms against a 200 ms target).</td></tr>
+          <tr><td><span class="area">Accessibility</span></td><td><span class="pill med">80</span></td><td><span class="pill med">90</span></td><td>Text contrast is too low in the service and blog cards, contact blocks and footer, and the page has no main landmark on either. The mobile menu button also has no accessible name, which is why mobile scores lower.</td></tr>
+          <tr><td><span class="area">SEO basics</span></td><td><span class="pill med">92</span></td><td><span class="pill med">92</span></td><td>The only scored miss on both is a missing meta description. Indexing, title, links, robots.txt, image alt text, hreflang and canonical all pass.</td></tr>
+          <tr><td><span class="area">Best practices</span></td><td><span class="pill med">92</span></td><td><span class="pill med">92</span></td><td>The logo is served at the wrong aspect ratio, two Wix requests log console errors (403 and 404), and standard security headers (CSP, HSTS, COOP, frame control) are missing — those last items are noted but not scored.</td></tr>
+          <tr><td><span class="area">Weight and caching</span></td><td colspan="2"><span class="pill med">461 KiB total</span></td><td>Static files are cached for only 1 hour (about 146 KiB could be saved with longer caching), 44 KiB of JavaScript is unused, CSS blocks the first render, and the oversized logo could save about 10 KiB.</td></tr>
+          <tr><td><span class="area">AI-agent readiness</span></td><td><span class="pill med">2 of 4</span></td><td><span class="pill low">Not scored</span></td><td>The llms.txt file follows Google’s recommendations, but the accessibility tree is not well-formed (same unnamed menu button) and ai-catalog.json returns a web page instead of valid JSON, so AI agents cannot read the catalog.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="block grid g-2">
+    <div class="card">
+      <h3>Fix first</h3>
+      <ul class="bullets mt-16">
+        <li><b>Speed up mobile’s main content:</b> load the headline font and hero content first, set fonts to swap in without hiding text, and defer scripts and styles that are not needed for the first screen, so the 4.3 s wait shrinks toward the 2.5 s target.</li>
+        <li><b>Add the missing meta description</b> — the only scored SEO failure on both reports, and the text Google shows under your name in search results.</li>
+        <li><b>Fix accessibility basics:</b> darken the muted text that fails contrast, wrap the page content in a main landmark, and give the mobile menu button an accessible name. This lifts Accessibility on both, and AI-agent readiness too.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Then improve</h3>
+      <ul class="bullets mt-16">
+        <li><b>Cache static files for longer</b> than 1 hour and remove the 44 KiB of unused JavaScript and duplicate code, so repeat visits and slower phones load less.</li>
+        <li><b>Serve the logo at the size it is shown</b> and in the right proportions — worth about 10 KiB and a cleaner header on every page.</li>
+        <li><b>Repair or remove ai-catalog.json</b> so it returns valid JSON (or nothing), and clear the two failing Wix requests behind the console errors.</li>
+        <li><b>Add standard security headers</b> (CSP, HSTS, COOP and frame control) through the site’s hosting wherever Wix allows it.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="source">Source: <a href="https://pagespeed.web.dev/analysis/https-translateneuro-com/fyydac0aur?form_factor=mobile" target="_blank" rel="noopener">Google PageSpeed Insights — translateneuro.com (mobile)</a> · <a href="https://pagespeed.web.dev/analysis/https-translateneuro-com/fyydac0aur?form_factor=desktop" target="_blank" rel="noopener">desktop view</a>. Lighthouse 13.5.0 lab tests, October 27, 2026.<sup>15</sup></p>
 </section>
 
 <!-- =========================================================
@@ -1027,6 +1115,7 @@
     <li>Pew Research Center, “Google users are less likely to click on links when an AI summary appears in the results,” July 22, 2025</li>
     <li>InsideSales.com and Dr. James B. Oldroyd, MIT, <a href="https://web.archive.org/web/20090529010553/http://www.leadresponsemanagement.org/mit_study" target="_blank" rel="noopener">Lead Response Management Study</a>, 2007. More than 15,000 web leads and more than 100,000 call attempts across six companies</li>
     <li>Nielsen Norman Group, <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="noopener">“How Long Do Users Stay on Web Pages?”</a>, September 2011. Users often leave a web page in 10–20 seconds unless it clearly holds their attention</li>
+    <li>Google, <a href="https://pagespeed.web.dev/analysis/https-translateneuro-com/fyydac0aur?form_factor=mobile" target="_blank" rel="noopener">PageSpeed Insights analysis of translateneuro.com</a> (Lighthouse 13.5.0), October 27, 2026. Mobile lab test (emulated Moto G Power, Slow 4G); desktop figures from a Lighthouse 13.5.0 desktop run the same day</li>
   </ol>
 </section>
 
