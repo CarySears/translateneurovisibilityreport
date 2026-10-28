@@ -97,6 +97,9 @@ main { padding: 44px 0 72px; }
 .no-js .panel { display: block; margin-bottom: 72px; }
 .panel-head .eyebrow { margin-bottom: 10px; }
 .panel-head h2 { font-size: clamp(25px, 3vw, 34px); font-weight: 600; max-width: 900px; }
+.panel-head h2.panel-title-sm { font-size: clamp(21px, 2.5vw, 28px); }
+.panel-head h2.panel-title-sm .line { display: block; }
+.panel-head h2.panel-title-sm .line + .line { margin-top: 14px; }
 .panel-head .intro { margin-top: 12px; max-width: 780px; font-size: 17px; }
 
 .block { margin-top: 44px; }
