@@ -319,6 +319,25 @@ table.wide { min-width: 640px; }
 .stage-card .content { padding: 20px 22px 24px; }
 .stage-card .content p { font-size: 15px; }
 .stage-card h4 { font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; font-family: var(--font-body); font-weight: 600; }
+
+/* ---------- 90-day launch roadmap (Stage 2) ---------- */
+.launch { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px; }
+.launch-title { font-size: 26px; margin-top: 6px; }
+.launch p { margin-top: 14px; font-size: 15px; }
+.launch .launch-strong { font-weight: 600; color: var(--ink); }
+.launch-sub { font-family: var(--font-head); color: var(--ink); font-size: 18px; margin-top: 34px; }
+.phase-track, .rhythm { display: grid; gap: 16px; position: relative; margin-top: 28px; }
+.phase-track { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.rhythm { grid-template-columns: repeat(5, minmax(0, 1fr)); margin-top: 18px; }
+.phase-track::before, .rhythm::before { content: ""; position: absolute; top: 7px; left: 10%; right: 10%; height: 2px; background: var(--blue); opacity: .3; }
+.phase, .rhythm-step { position: relative; text-align: center; }
+.launch .dot { display: block; width: 14px; height: 14px; border-radius: 50%; background: var(--blue); margin: 0 auto 10px; position: relative; z-index: 1; box-shadow: 0 0 0 4px #fff; }
+.phase .dot.d1 { background: var(--coral); }
+.phase .dot.d3 { background: var(--teal); }
+.phase small { display: block; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.phase b { display: block; font-family: var(--font-head); color: var(--ink); font-size: 15px; text-transform: uppercase; margin-top: 4px; }
+.rhythm-step b { display: block; font-family: var(--font-head); color: var(--blue-dark); font-size: 14px; }
+.rhythm-step span:last-child { display: block; font-size: 12.5px; color: var(--muted); margin-top: 4px; line-height: 1.45; }
 a.stage-card { text-decoration: none; color: inherit; display: block; transition: border-color .15s ease, transform .15s ease; }
 a.stage-card:hover { border-color: var(--blue); transform: translateY(-2px); }
 
@@ -359,6 +378,9 @@ a.stage-card:hover { border-color: var(--blue); transform: translateY(-2px); }
 }
 @media (max-width: 520px) {
   :root { --gutter: 16px; }
+  .launch { padding: 22px; }
+  .phase-track, .rhythm { grid-template-columns: 1fr; gap: 20px; }
+  .phase-track::before, .rhythm::before { display: none; }
   .steps { grid-template-columns: 1fr; }
   .g-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
   .g-4 > .card { padding: 16px; }
@@ -380,5 +402,5 @@ a.stage-card:hover { border-color: var(--blue); transform: translateY(-2px); }
   body { background: #fff; }
   .panel { display: block !important; break-before: page; }
   .client-band, .feature, .stage-banner, .stage-card .head, .why, .pill, .ic { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .card, .why, .steps .step, .stage-card, .table-wrap { break-inside: avoid; }
+  .card, .why, .steps .step, .stage-card, .table-wrap, .launch { break-inside: avoid; }
 }
