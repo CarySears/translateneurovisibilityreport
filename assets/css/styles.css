@@ -17,7 +17,6 @@
   --blue-dark: #15729A;
   --green: #1E8A5E;        /* passing / target */
   --coral: #E8704F;        /* gaps, Stage 1 */
-  --berry: #B8336A;        /* Stage 3 */
   --teal: #77C5C4;
 
   --font-head: "Poppins", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
@@ -169,7 +168,6 @@ sup { font-size: .68em; line-height: 0; color: var(--muted); }
 .stat .num.sm { font-size: 26px; }
 .stat .label { margin-top: 8px; font-size: 14.5px; }
 .stat.coral .num { color: var(--coral); }
-.stat.berry .num { color: var(--berry); }
 .stat.green .num { color: var(--green); }
 
 .why { background: var(--tint); border-radius: var(--radius); padding: 24px; }
@@ -301,7 +299,7 @@ table.wide { min-width: 640px; }
   border: 1px solid var(--line); background: #fff; color: var(--ink);
 }
 .subnav button:hover { border-color: var(--blue); }
-.subnav .s1 { color: #C4532F; } .subnav .s2 { color: var(--blue-dark); } .subnav .s3 { color: var(--berry); }
+.subnav .s1 { color: #C4532F; } .subnav .s2 { color: var(--blue-dark); }
 
 .stage-banner { margin-top: 64px; border-radius: var(--radius); padding: 26px 28px; color: #fff; }
 .stage-banner small { display: block; font-size: 12.5px; letter-spacing: .14em; text-transform: uppercase; opacity: .9; font-weight: 600; }
@@ -310,7 +308,6 @@ table.wide { min-width: 640px; }
 .stage-banner .quote { font-style: italic; margin-top: 10px; }
 .stage-banner.s1 { background: var(--coral); }
 .stage-banner.s2 { background: var(--blue); }
-.stage-banner.s3 { background: var(--berry); }
 .stage-banner + .block { margin-top: 28px; }
 
 .stage-card { border-radius: var(--radius); overflow: hidden; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
@@ -319,7 +316,6 @@ table.wide { min-width: 640px; }
 .stage-card .head h3 { color: #fff; font-size: 18px; margin-top: 2px; }
 .stage-card.s1 .head { background: var(--coral); }
 .stage-card.s2 .head { background: var(--blue); }
-.stage-card.s3 .head { background: var(--berry); }
 .stage-card .content { padding: 20px 22px 24px; }
 .stage-card .content p { font-size: 15px; }
 .stage-card h4 { font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; font-family: var(--font-body); font-weight: 600; }
