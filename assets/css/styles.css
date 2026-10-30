@@ -317,6 +317,7 @@ table.wide { min-width: 640px; }
 .stage-card .head h3 { color: #fff; font-size: 18px; margin-top: 2px; }
 .stage-card.s1 .head { background: var(--coral); }
 .stage-card.s2 .head { background: var(--blue); }
+.stage-card.s3 .head { background: var(--berry); }
 .stage-card .content { padding: 20px 22px 24px; }
 .stage-card .content p { font-size: 15px; }
 .stage-card h4 { font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; font-family: var(--font-body); font-weight: 600; }
