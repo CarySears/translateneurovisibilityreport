@@ -38,8 +38,11 @@
       }
     });
     if (scroll) {
-      var top = tabBar.getBoundingClientRect().top + window.scrollY;
-      if (window.scrollY > top) window.scrollTo({ top: top, behavior: "auto" });
+      // The tab bar is sticky, so its on-screen top is 0 once you have
+      // scrolled. Measure the new section and park it just under the tabs.
+      var panel = document.getElementById(id);
+      var y = panel ? panel.getBoundingClientRect().top + window.scrollY - tabBar.offsetHeight : 0;
+      window.scrollTo(0, Math.max(0, y));
     }
   }
 
